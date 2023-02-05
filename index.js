@@ -33,7 +33,7 @@ getwetherdata();
 function getwetherdata(){
     navigator.geolocation.getCurrentPosition((success)=>{
         let{latitude,longitude}=success.coords;
-        fetch(`http://api.weatherapi.com/v1/forecast.json?key=662c8500ae844893a5d200627230402&q=${latitude} ${longitude}&days=8&aqi=no&alerts=yes`).then(res=>res.json()).then(data=>{
+        fetch(`https://api.weatherapi.com/v1/forecast.json?key=662c8500ae844893a5d200627230402&q=${latitude} ${longitude}&days=8&aqi=no&alerts=yes`).then(res=>res.json()).then(data=>{
          
       
         showWeatherData(data);
