@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+    
+}
+:root{
+    --maincol:#FFFFFF;
+    --textcol:#E85E4C;
+    --textcolsec:#42032C;
+    --secbg:#FFFBAC;
+}
+body{
+    padding:  20px 80px;
+    height: 100vh;
+    
+    
+}
+header{
+    height:100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.location{
+    width: 400px;
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+   
+}
+.icon{
+   
+    position: relative;
+    box-shadow: -1px 19px 43px -18px rgba(0,0,0,0.75);
+    border-radius: 12px;
+    
+    cursor: pointer;
+}
+.down{
+    position: absolute;
+    display: none;
+    background-color: #FFFFFF;
+    box-shadow: -1px 19px 43px -18px rgba(0,0,0,0.75);
+    border-radius: 12px;
+    z-index: 1;
+    margin-top: 10px;
+}
+/* .down:hover ul li{
+    color:#E85E4C;
+} */
+.down ul li{
+    list-style: none;
+    display: block;
+    min-width: 158px;
+    
+    padding: 18px 16px;
+    color: black;
+    cursor: pointer;
+}
+.down ul li:hover{
+    color: black;
+    background-color: #E85E4C;
+    transition: ease-in-out 0.5s;
+    border-radius: 12px;
+}
+.dropdown:hover .down{
+    display: block;
+    color: black;
+    transition: ease-in-out 0.5s;
+}
+.icon:hover{
+    
+    transform: scale(1.03);
+    transition: ease-in-out 0.3s;
+    background-color: #FFFBAC;
+}
+
+.icon img{
+    padding: 5px;
+    height: 48px;
+    width: 48px;
+}
+.location_name{
+    padding: 20px;
+    box-shadow: -1px 19px 43px -25px rgba(0,0,0,0.75);
+    border-radius: 26px 26px 26px 26px;
+    z-index: 0;
+    cursor: pointer;
+    
+}
+.location_name:hover{
+    transform: scale(1.03);
+    transition: ease-in-out 0.3s;
+    background-color: #FFFBAC;
+}
+.location_name h1{
+   /* padding: 5px 10px; */
+    font-size: 16px;
+}
+.info{
+    padding: 20px;
+    display: flex;
+    /* flex-wrap: wrap; */
+   
+    border-radius: 26px 26px 26px 26px;
+    box-shadow: -1px 19px 43px -25px rgba(0,0,0,0.75);
+    cursor: pointer;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info:hover{
+    transform: scale(1.03);
+    transition: ease-in-out 0.3s;
+}
+
+.curr_time{
+    padding:0 30px;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--textcol);
+}
+.curr_date{
+    font-size: 18px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.curr_day{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+.currentweather{
+    
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: 600;
+}
+.curr_humidity{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+.curr_pressure{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+.container{
+    padding-top:150px;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.today_info{
+    width: 495px;
+    height: 475px;
+    padding: 20px;
+    background-color:#FFFBAC;
+    border-radius: 26px 26px 26px 26px;
+    box-shadow: -1px 19px 43px -25px rgba(0,0,0,0.75);
+
+}
+.today_info:hover{
+        transform: scale(1.03);
+        transition: ease-in-out 0.3s;
+        background-color: #E85E4C;
+        color: #FFFFFF;
+       
+}
+.today_temp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+    
+}
+
+.today_icon img{
+    margin-top:-40px;
+    width: 230px;
+    height: 230px;
+    
+}
+.temp_now{
+    display: block;
+    justify-content: space-between;
+}
+.temp_now h1{
+    font-size: 90px;
+}
+.temp_now h2{
+    font-size: 20px;
+}
+.today_sky{
+    font-size: 50px;
+    
+    padding-left: 25px;
+}
+.today_day{
+    font-size: 24px;
+   
+    padding-left: 30px;
+    
+}
+.today_main_info{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+.next_info{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    
+   
+}
+.day2:hover{
+    transform: scale(1.03);
+    transition: ease-in-out 0.3s;
+    background-color: #FF577F;
+    color: white;
+}
+.day2{
+    width: 170px;
+    height: 207px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 26px 26px 26px 26px;
+    padding: 20px;
+    box-shadow: -1px 19px 43px -25px rgba(0,0,0,0.75);
+    cursor: pointer;
+    
+}
+
+.day2_icon img{
+    height: 64px;
+    width: 64px;
+    
+}
+.day_2_display{
+    width: 100px;
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+}
+.day2_temp{
+    padding-left: 10px;
+    font-size: 30px;
+}
+.day2_sky{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.day2_day{
+    
+    font-size: 25px;
+}
+
+.day2_date{
+    margin-top: 10px;
+    font-size: 18px;
+
+}
+.footer{
+    height: 80px;
+    /* width: 400px; */
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width:700px) {
+    body{
+        padding:20px 50px;
+        justify-content: center;
+    }
+    header{
+        height:450px;
+        display: block;
+        /* align-items: none; */
+    }
+    .location{
+        height: 100px;
+        width: 100px;
+        justify-content: space-between;
+        /* margin-left:30px ; */
+    }.icon{
+        margin-right: 20px;
+    }
+    .icon img{
+        height: 64px;
+        width: 64px;
+        padding: 20px;
+        /* margin-right: 20px; */
+    }
+    .location_name{
+        height: 50px;
+        width: 200px;
+        justify-content: center;
+    }
+    .location_name:hover{
+        
+        background-color: white;
+    }
+    .location_name h1{
+       width: 170px;
+       font-size: 14px;
+    }
+   .info{
+    margin-top: 50px;
+    
+    height: 200px;
+    width: 280px;
+    /* font-size: 10px; */
+    flex-wrap: wrap;
+    box-shadow: none;
+    background-color: white;
+    border-radius: 0;
+   }
+   .curr_time{
+    font-size: 32px;
+   }
+   .currentweather{
+    padding: 20px;
+   }
+   .curr_humidity{
+    font-size: 16px;
+   }
+   .curr_pressure{
+    font-size: 16px;
+   }
+   .container{
+    
+    width: 350px;
+    margin-right: auto;
+    display: block;
+    padding: 0px;
+   }
+   .today_info{
+    height: 450px;
+    width: 300px;
+   padding: 10px;
+    
+   }
+   .today_icon img {
+    height: 180px;
+    width: 180px;
+    padding: 20px;
+   }
+   .temp_now h1{
+    font-size: 60px;
+   }
+   .today_sky{
+    font-size: 40px;
+   }
+   .today_day{
+    font-size: 30px;
+    padding-left:27px;
+   }
+   .today_main_info{
+    display: block;
+    padding: 0px 27px;
+   }
+   .next_info{
+    display: block;
+    width: 200px;
+    margin-top:100px;
+    padding:0;
+   }
+   .day2{
+    height: 250px;
+    width: 250px;
+    margin-bottom: 40px;
+   }
+}
+@media  screen and (min-width:750px) and (max-width:1300px){
+    body{
+        padding: 80px;
+    }
+    header{
+        height:450px;
+        display: block;
+        /* align-items: none; */
+    }
+    .location{
+        height: 100px;
+        width: 700px;
+        justify-content: space-between;
+        /* margin-left:30px ; */
+    }.icon{
+        margin-right: 20px;
+        box-shadow: none;
+    }
+    .icon img{
+        height: 100px;
+        width: 100px;
+        padding: 20px;
+        /* margin-right: 20px; */
+    }
+    .location_name{
+        height: 100px;
+        width: 400px;
+        padding: 5px 20px;
+        /* align-items: center; */
+        box-shadow: none;
+    }
+    .location_name:hover{
+        
+        background-color: white;
+    }
+    .location_name h1{
+        padding: 20px;
+       /* width: 300px; */
+       font-size: 22px;
+    }
+   .info{
+    margin-top: 50px;
+    
+    height: 200px;
+    width: 650px;
+    padding: 0px 100px;
+    font-size: 22px;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    box-shadow: none;
+    background-color: white;
+    border-radius: 0;
+   }
+   .container{
+    height: auto;
+    margin: 0;
+    padding: 0px 80px;
+    display: block;
+   }
+   .curr_time{
+    font-size: 32px;
+   }
+   .currentweather{
+    padding: 20px;
+   }
+   .curr_humidity{
+    font-size: 16px;
+   }
+   .curr_pressure{
+    font-size: 16px;
+   }
+   .next_info{
+    display: block;
+    width: auto;
+    height: auto;
+    margin-top:100px;
+    padding:0px 100px;
+   }
+   .day2{
+    height: 250px;
+    width: 250px;
+    margin-bottom: 40px;
+   }
+}
