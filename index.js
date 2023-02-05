@@ -52,7 +52,7 @@ document.getElementById("New York").onclick=function(){func("New York")};
 document.getElementById("Mumbai").onclick=function(){func("Mumbai")};
 document.getElementById("Tokyo").onclick=function(){func("Tokyo")};
 function func(parameter){
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=662c8500ae844893a5d200627230402&q=${parameter}&days=8&aqi=no&alerts=yes`).then(res=>res.json()).then(data=>{
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=662c8500ae844893a5d200627230402&q=${parameter}&days=8&aqi=no&alerts=yes`).then(res=>res.json()).then(data=>{
         console.log(data);  
       
         showWeatherData(data);
