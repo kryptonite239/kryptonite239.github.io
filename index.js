@@ -130,36 +130,5 @@ function showWeatherData(data){
       <h2 class="day_visibility">Visibility: ${vis_km} Km</h2>
   </div>
   <div class="footer"><p>All The Temperatures Mentioned Are In Celcius</p></div>`;
-  
-//   console.log(info);
-   
-  
-
-//   let info=`<h1>Hello<h1>`;
-//     data.forecast.forecastday.forEach(()=>{
-//         // if(idx!=0){
-//         //     let{avgtemp_c}=day;
-//         //     let{text}=day.condition;
-//         // info+=`
-//         // <div class="day2">
-//         //         <div class="day_2_display">
-//         //         <div class="day2_icon">
-//         //             <img src="images/1x/cloudy.png">
-//         //         </div>
-//         //         <div class="day2_temp">${avgtemp_c}°</div>
-//         //     </div>
-//         //         <div class="day2_main_info">
-//         //             <div class="day2_weather">
-//         //             <h1 class="day2_sky">${text}</h1>
-//         //             <h1 class="day2_day">Sunday</h1>
-//         //         </div>
-//         //         <div class="day2_sec_info">
-//         //             <h1 class="day2_date">Feb 04</h1>
-//         //         </div>
-//         //     </div>
-//         //     </div>
-//         // `;
-//         // }
-//     })
-//     nextEl.innerHTML=info;
+ 
 }
